@@ -1,0 +1,35 @@
+.promo {
+    &__container {
+        padding-top: 130px;
+        padding-bottom: 100px;
+    }
+    &__title {
+        @include title-general;
+        margin-bottom: 120px;
+    }
+    &__catalog {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 13px;
+        margin-bottom: 70px;
+    }
+    &__expand {
+        display: block;
+        margin: 0 auto;
+        padding-right: 50px;
+        border: none;
+        background-color: transparent;
+        background-image: url(../icons/expand-icon.svg);
+        background-repeat: no-repeat;
+        background-position: 100% center;
+
+        font-family: $font-general;
+        color: $text-color-dark;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+}

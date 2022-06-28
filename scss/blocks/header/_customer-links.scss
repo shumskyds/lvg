@@ -1,0 +1,33 @@
+.customer-links {
+    &__list {
+        @include list-reset;
+
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__item {
+        margin-right: 30px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &__link {
+        position: relative;
+    }
+    &__counter {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        bottom: -25%;
+        right: -5px;
+        width: 18px;
+        height: 18px;
+        background-color: $alarm-color;
+        border-radius: 50%;
+        color: $text-color-light;
+        font-family: $font-general;
+        font-size: 12px;
+    }
+
+}

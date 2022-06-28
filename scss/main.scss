@@ -1,0 +1,37 @@
+/* === Mixins and Variables === */
+
+@import 'variables';
+@import 'mixins';
+
+/* === /Mixins and Variables === */
+
+/* === General styles === */
+
+@import 'general/index-body';
+@import 'general/container';
+@import 'general/visually-hidden';
+
+/* === /General styles === */
+
+/* === Blocks === */
+
+/* Header */
+
+@import 'blocks/header/header';
+@import 'blocks/header/main-nav';
+@import 'blocks/header/customer-links';
+
+/* /Header */
+
+/* Main */
+
+@import 'blocks/main/intro';
+@import 'blocks/main/promo';
+@import 'blocks/main/catalog-card';
+@import 'blocks/main/about';
+@import 'blocks/main/goal';
+
+/* /Main */
+
+
+/* === /Blocks === */

@@ -1,0 +1,42 @@
+/* === Resets === */
+
+@mixin list-reset {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+@mixin link-reset {
+    text-decoration: none;
+}
+
+/* === /Resets === */
+
+/* === Text === */
+
+@mixin text-general {
+    font-family: $font-general;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+@mixin title-general {
+    font-family: $font-secondary;
+    color: $text-color-dark;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 70px;
+    margin-top: 0;
+}
+
+@mixin price-general {
+    font-family: $font-general;
+    opacity: 0.9;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0.03em;
+}
+
+/* === /Text === */

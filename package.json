@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": 
+  "homepage": "https://shumskyds.github.io/lvg",
   "scripts": {
     "deploy": "gh-pages -d dist"
   },

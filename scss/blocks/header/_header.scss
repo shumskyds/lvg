@@ -1,0 +1,19 @@
+.header {
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 80px;
+    }
+    &__logo-wrapper {
+        max-width: 137px;
+        margin-right: 40px;
+    }
+    &__nav {
+        max-width: 700px;
+        margin-right: 40px;
+    }
+    &__links {
+        max-width: 200px;
+    }
+}

@@ -1,0 +1,24 @@
+.main-nav {
+    &__list {
+        @include list-reset;
+
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__item {
+        margin-right: 40px;
+        &:last-child {
+            margin-right: 0;
+        }
+        &_new {
+            background-color: $alarm-color;
+        }
+    }
+    &__link {
+        @include link-reset;
+        @include text-general;
+
+        color: $text-color-dark;
+        padding: 10px 0;
+    }
+}
