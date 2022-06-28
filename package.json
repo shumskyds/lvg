@@ -1,0 +1,19 @@
+{
+  "name": "lvg",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "homepage": 
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.27.10",
+    "gh-pages": "^4.0.0",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.53.0"
+  }
+}
