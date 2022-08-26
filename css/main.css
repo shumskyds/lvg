@@ -1,4 +1,4 @@
-/* === Mixins and Variables === */ /* === Fonts === */
+/* === Mixins, Variables and General === */ /* === Fonts === */
 /* === /Fonts === */
 /* === Colors === */
 /* === /Colors === */
@@ -6,14 +6,26 @@
 /* === /Resets === */
 /* === Text === */
 /* === /Text === */
-/* === /Mixins and Variables === */
-/* === General styles === */
+/* === Positioning === */
+/* === /Positioning === */
+.index-html {
+  height: 100%;
+}
+
 .index-body {
-  display: grid;
-  grid-template-rows: min-content 1fr min-content;
-  align-content: start;
+  display: flex;
+  flex-direction: column;
   min-height: 100%;
   background-color: #F2F1ED;
+}
+
+.index-main {
+  flex: 1 0 auto;
+}
+
+.index-footer {
+  flex: 0 0 auto;
+  background-color: red;
 }
 
 .container {
@@ -37,8 +49,57 @@
   overflow: hidden;
 }
 
-/* === /General styles === */
+.transition-none {
+  transition: none;
+}
+
+/* === /Mixins and Variables === */
 /* === Blocks === */
+/* Common */
+.slider {
+  max-width: 80%;
+  border: 2px solid black;
+  margin: 30px auto;
+  overflow: hidden;
+}
+.slider__line {
+  background-color: green;
+  display: flex;
+  transition: all ease 1s;
+}
+.slider__control-track {
+  height: 2px;
+  background-color: #D1CDBB;
+}
+.slider__control-item {
+  transform: translateY(-25%);
+  height: 5px;
+  width: 33%;
+  background-color: #D1CDBB;
+}
+
+.blog-article {
+  display: flex;
+  justify-content: space-evenly;
+}
+.blog-article__img-wrapper {
+  max-width: 50%;
+  margin-right: 20px;
+}
+.blog-article__img {
+  max-width: 100%;
+  height: auto;
+}
+.blog-article__descr-wrapper {
+  max-width: 50%;
+  margin-left: 20px;
+  align-self: center;
+}
+.blog-article__text-wrapper {
+  max-width: 420px;
+}
+
+/* /Common */
 /* Header */
 .header__container {
   display: flex;
@@ -404,6 +465,162 @@
   align-items: center;
   max-width: 100%;
   height: auto;
+}
+
+.subscribe__container {
+  padding-top: 130px;
+  padding-bottom: 100px;
+}
+.subscribe__title {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #403B3B;
+  font-weight: 400;
+  font-size: 90px;
+  line-height: 90px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+.subscribe__title-number {
+  color: #EE1F1F;
+  font-weight: 700;
+}
+.subscribe__descr {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #403B3B;
+  text-align: center;
+  margin-bottom: 120px;
+}
+.subscribe__form {
+  margin: 0 auto;
+}
+
+.subscribe-form {
+  padding: 20px;
+  max-width: 600px;
+}
+.subscribe-form__fieldset {
+  border: none;
+  min-height: 180px;
+}
+.subscribe-form__input-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.subscribe-form__label {
+  min-width: 47%;
+}
+.subscribe-form__input {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #9E9A89;
+  height: 36px;
+  width: 100%;
+  margin-right: 10px;
+  border: none;
+  border-bottom: 1px solid #D1CDBB;
+  background-color: transparent;
+}
+.subscribe-form__input::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #9E9A89;
+}
+.subscribe-form__submit {
+  font-family: "Roboto", sans-serif;
+  color: #F2F1ED;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  width: 100%;
+  padding: 18px 25px;
+  border: none;
+  background-color: #403B3B;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.subscribe-form__agreement {
+  font-family: "Roboto", sans-serif;
+  color: #403B3B;
+  opacity: 0.6;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+}
+.subscribe-form__agreement-link {
+  text-decoration: none;
+  color: inherit;
+  border-bottom: 1px solid rgba(64, 59, 59, 0.6);
+}
+
+.gallery__container {
+  padding-top: 130px;
+  padding-bottom: 100px;
+}
+.gallery__title {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #403B3B;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 70px;
+  margin-top: 0;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.gallery__icon-wrapper {
+  text-align: center;
+  margin-bottom: 90px;
+}
+.gallery__cards-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 13px;
+}
+.gallery__card-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.gift__container {
+  padding-top: 130px;
+  padding-bottom: 100px;
+  background-color: pink;
+}
+.gift__title {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #403B3B;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 70px;
+  margin-top: 0;
+  margin-bottom: 120px;
+}
+.gift__text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #403B3B;
+  max-width: 600px;
+  margin-bottom: 60px;
+}
+
+.blog-preview__container {
+  padding-top: 130px;
+  padding-bottom: 100px;
 }
 
 /* /Main */

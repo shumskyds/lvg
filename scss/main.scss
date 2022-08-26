@@ -1,19 +1,19 @@
-/* === Mixins and Variables === */
+/* === Mixins, Variables and General === */
 
 @import 'variables';
 @import 'mixins';
+@import 'general';
 
 /* === /Mixins and Variables === */
 
-/* === General styles === */
-
-@import 'general/index-body';
-@import 'general/container';
-@import 'general/visually-hidden';
-
-/* === /General styles === */
-
 /* === Blocks === */
+
+/* Common */
+
+@import 'blocks/common/slider';
+@import 'blocks/common/blog-article';
+
+/* /Common */
 
 /* Header */
 
@@ -30,8 +30,12 @@
 @import 'blocks/main/catalog-card';
 @import 'blocks/main/about';
 @import 'blocks/main/goal';
+@import 'blocks/main/subscribe';
+@import 'blocks/main/subscribe-form';
+@import 'blocks/main/gallery';
+@import 'blocks/main/gift';
+@import 'blocks/main/blog-preview';
 
 /* /Main */
-
 
 /* === /Blocks === */

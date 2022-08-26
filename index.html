@@ -67,17 +67,17 @@
         <section class="intro">
             <div class="container intro__container">
                 <div class="intro__logo-wrapper">
-                    <img class="intro__logo" src="img/intro-logo.svg" alt="логотип магазина" width="578" height="264">
+                    <img class="intro__logo" src="img/intro/intro-logo.svg" alt="логотип магазина" width="578" height="264">
                 </div>
                 <div class="intro__pictures-wrapper">
                     <div class="intro__img-wrapper">
-                        <img class="intro__img" src="img/intro-img-left.jpg" alt="фото модели малое" width="290" height="440">
+                        <img class="intro__img" src="img/intro/intro-img-left.jpg" alt="фото модели малое" width="290" height="440">
                     </div>
                     <div class="intro__img-wrapper intro__img-wrapper_big">
-                        <img class="intro__img" src="img/intro-img-main.jpg" alt="фото модели большое" width="593" height="757">
+                        <img class="intro__img" src="img/intro/intro-img-main.jpg" alt="фото модели большое" width="593" height="757">
                     </div>
                     <div class="intro__img-wrapper">
-                        <img class="intro__img" src="img/intro-img-right.jpg" alt="фото модели малое" width="290" height="440">
+                        <img class="intro__img" src="img/intro/intro-img-right.jpg" alt="фото модели малое" width="290" height="440">
                     </div>
                 </div>
                 <div class="intro__text-wrapper">
@@ -93,7 +93,7 @@
                 <div class="promo__catalog">
                     <article class="promo__card catalog-card">
                         <div class="catalog-card__img-wrapper">
-                            <img class="catalog-card__img" src="img/promo-img-1.jpg" alt="фото товара">
+                            <img class="catalog-card__img" src="img/promo/promo-img-1.jpg" alt="фото товара" width="290" height="450">
                         </div>
                         <h3 class="catalog-card__title">Комплект Amo</h3>
                         <div class="catalog-card__price-wrapper">
@@ -104,7 +104,7 @@
                     </article>
                     <article class="promo__card catalog-card">
                         <div class="catalog-card__img-wrapper">
-                            <img class="catalog-card__img" src="img/promo-img-2.jpg" alt="фото товара">
+                            <img class="catalog-card__img" src="img/promo/promo-img-2.jpg" alt="фото товара" width="290" height="450">
                         </div>
                         <h3 class="catalog-card__title">Лиф Fulgeo</h3>
                         <div class="catalog-card__price-wrapper">
@@ -115,7 +115,7 @@
                     </article>
                     <article class="promo__card catalog-card">
                         <div class="catalog-card__img-wrapper">
-                            <img class="catalog-card__img" src="img/promo-img-3.jpg" alt="фото товара">
+                            <img class="catalog-card__img" src="img/promo/promo-img-3.jpg" alt="фото товара" width="290" height="450">
                         </div>
                         <h3 class="catalog-card__title">Трусы Alice</h3>
                         <div class="catalog-card__price-wrapper">
@@ -126,7 +126,7 @@
                     </article>
                     <article class="promo__card catalog-card">
                         <div class="catalog-card__img-wrapper">
-                            <img class="catalog-card__img" src="img/promo-img-4.jpg" alt="фото товара">
+                            <img class="catalog-card__img" src="img/promo/promo-img-4.jpg" alt="фото товара" width="290" height="450">
                         </div>
                         <h3 class="catalog-card__title">Лиф Nina</h3>
                         <div class="catalog-card__price-wrapper">
@@ -147,16 +147,16 @@
                     <div class="about__content-wrapper">
                         <p class="about__text">У нас в Омске находятся собственное производство    и экспериментальный цех, которые появились весной 2016. Экспериментальный   цех позволяет нам работать над дизайном — изготавливать новые лекала, пробовать разные материалы, что-то оперативно исправлять.</p>
                         <div class="about__img-wrapper about__img-wrapper_1">
-                            <img class="about__img about__img_1" src="img/about-img-1.jpg" alt="" width="470" height="640">
+                            <img class="about__img about__img_1" src="img/about/about-img-1.jpg" alt="" width="470" height="640">
                         </div>
                     </div>
                     <div class="about__content-wrapper">
                         <p class="about__text">Мы выпускаем в среднем около 5-6 коллекций в год. Несмотря на это, все изделия обязательно должны сочетаться между собой, быть комбинаторными (даже изделия из коллекций разных годов).</p>
                         <div class="about__img-wrapper about__img-wrapper_2">
-                            <img class="about__img about__img_2" src="img/about-img-2.jpg" alt="" width="260" height="230">
+                            <img class="about__img about__img_2" src="img/about/about-img-2.jpg" alt="" width="260" height="230">
                         </div>
                         <div class="about__img-wrapper about__img-wrapper_3">
-                            <img class="about__img about__img_3" src="img/about-img-3.jpg" alt="" width="597" height="470">
+                            <img class="about__img about__img_3" src="img/about/about-img-3.jpg" alt="" width="597" height="470">
                         </div>
                     </div>
                 </div>
@@ -175,7 +175,141 @@
                 </div>
             </div>
         </section>
+
+        <section class="subscribe">
+            <div class="container subscribe__container">
+                <h2 class="subscribe__title">Получи скидку <span class="subscribe__title-number">20%</span></h2>
+                <p class="subscribe__descr">А также небольшое медиа о том, как мы уже 6 лет создаем нижнее белье на вашей почте.</p>
+               
+                <form action="#" class="subscribe__form subscribe-form" method="get">
+                    <fieldset class="subscribe-form__fieldset">
+                        <legend class="subscribe-form__legend visually-hidden">Подписаться на рассылку</legend>
+                        <div class="subscribe-form__input-wrapper">
+                            <label class="subscribe-form__label" aria-label="Имя">
+                                <input type="text" class="subscribe-form__input" placeholder="Имя">
+                            </label>
+                            <label class="subscribe-form__label" aria-label="Электронная почта">
+                                <input type="email" class="subscribe-form__input" placeholder="E-mail">
+                            </label>
+                        </div>
+                        <button class="subscribe-form__submit" type="submit">Подписаться</button>
+                        <p class="subscribe-form__agreement">Нажимая кнопку «Подписаться», вы соглашаетесь с <a class="subscribe-form__agreement-link" href="#">политикой конфиденциальности</a></p>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+
+        <section class="gallery">
+            <div class="container gallery__container">
+                <h2 class="gallery__title">Instagram</h2>
+                <div class="gallery__icon-wrapper">
+                    <a href="#" class="gallery__icon-link">
+                        <img src="icons/gallery-icon.svg" alt="иконка Инстаграм" class="gallery__icon" width="60" height="60">
+                    </a>
+                </div>
+
+                <div class="gallery__cards-wrapper">
+                    <div class="gallery__card">
+                        <img src="img/gallery/gallery-img-1.jpg" alt="фото модели" class="gallery__card-img" width="290" height="290">
+                    </div>
+                    <div class="gallery__card">
+                        <img src="img/gallery/gallery-img-2.jpg" alt="фото модели" class="gallery__card-img" width="290" height="290">
+                    </div>
+                    <div class="gallery__card">
+                        <img src="img/gallery/gallery-img-3.jpg" alt="фото модели" class="gallery__card-img" width="290" height="290">
+                    </div>
+                    <div class="gallery__card">
+                        <img src="img/gallery/gallery-img-4.jpg" alt="фото модели" class="gallery__card-img" width="290" height="290">
+                    </div>
+                    <div class="gallery__card">
+                        <img src="img/gallery/gallery-img-5.jpg" alt="фото модели" class="gallery__card-img" width="290" height="290">
+                    </div>
+                    <div class="gallery__card">
+                        <img src="img/gallery/gallery-img-6.jpg" alt="фото модели" class="gallery__card-img" width="290" height="290">
+                    </div>
+                    <div class="gallery__card">
+                        <img src="img/gallery/gallery-img-7.jpg" alt="фото модели" class="gallery__card-img" width="290" height="290">
+                    </div>
+                    <div class="gallery__card">
+                        <img src="img/gallery/gallery-img-8.jpg" alt="фото модели" class="gallery__card-img" width="290" height="290">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gift">
+            <div class="container gift__container">
+                <h2 class="gift__title">Подарочный сертификат</h2>
+
+                <p class="gift__text">Это предложение создано специально для тех, кто очень хочет подарить своему близкому человеку комплект белья, но не смог незаметно снять мерки и угадать размер на глаз. Знаем, что такой подарок точно порадует.</p>
+
+                <div class="gift__slider slider">
+                    <div class="slider__line">
+                        <img class="slider__img" src="img/gift/gift-card-500.jpg" alt="img" width="452" height="302">
+                        <img class="slider__img" src="img/gift/gift-card-1000.jpg" alt="img" width="452" height="302">
+                        <img class="slider__img" src="img/gift/gift-card-1500.jpg" alt="img" width="452" height="302">
+                    </div>
+                </div>
+                <button class="slider__button slider__button_prev">Prev</button>
+                <button class="slider__button slider__button_next">Next</button>
+                <div class="slider__control-wrapper">
+                    <div class="slider__control-track">
+                        <div class="slider__control-item"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="blog-preview">
+            <div class="container blog-preview__container">
+                <h2 class="visually-hidden">Избранные статьи из нашего блога</h2>
+                <article class="blog-preview__article blog-article">
+                    <div class="blog-article__img-wrapper">
+                        <img src="http://placehold.jp/500x500.png" alt="первая мужская коллекция LVG" class="blog-article__img" width="500" height="500">
+                    </div>
+                    <div class="blog-article__descr-wrapper">
+                        <time class="blog-article__time" datetime="2021-09-22">22.09.2021</time>
+                        <div class="blog-article__text-wrapper">
+                            <h3 class="blog-article__title">Первая мужская коллекция LVG / 2020</h3>
+                            <p class="blog-article__text">Вообще 2020 вышел очень сложным. Пандемия, конфликты, ограничения, границы. Все эти слова сопровождают нас каждый день, пролезли в нашу броню и рутину. Появилось очень много страха, с которым непонятно как бороться.</p>
+                        </div>
+                        <a href="#" class="blog-article__more">читать далее</a>
+                    </div>
+                </article>
+                <article class="blog-preview__article blog-article">
+                    <div class="blog-article__img-wrapper">
+                        <img src="http://placehold.jp/500x500.png" alt="первая мужская коллекция LVG" class="blog-article__img" width="500" height="500">
+                    </div>
+                    <div class="blog-article__descr-wrapper">
+                        <time class="blog-article__time" datetime="2021-09-22">22.09.2021</time>
+                        <div class="blog-article__text-wrapper">
+                            <h3 class="blog-article__title">Первая мужская коллекция LVG / 2020</h3>
+                            <p class="blog-article__text">Вообще 2020 вышел очень сложным. Пандемия, конфликты, ограничения, границы. Все эти слова сопровождают нас каждый день, пролезли в нашу броню и рутину. Появилось очень много страха, с которым непонятно как бороться.</p>
+                        </div>
+                        <a href="#" class="blog-article__more">читать далее</a>
+                    </div>
+                </article>
+                <article class="blog-preview__article blog-article">
+                    <div class="blog-article__img-wrapper">
+                        <img src="http://placehold.jp/500x500.png" alt="первая мужская коллекция LVG" class="blog-article__img" width="500" height="500">
+                    </div>
+                    <div class="blog-article__descr-wrapper">
+                        <time class="blog-article__time" datetime="2021-09-22">22.09.2021</time>
+                        <div class="blog-article__text-wrapper">
+                            <h3 class="blog-article__title">Первая мужская коллекция LVG / 2020</h3>
+                            <p class="blog-article__text">Вообще 2020 вышел очень сложным. Пандемия, конфликты, ограничения, границы. Все эти слова сопровождают нас каждый день, пролезли в нашу броню и рутину. Появилось очень много страха, с которым непонятно как бороться.</p>
+                        </div>
+                        <a href="#" class="blog-article__more">читать далее</a>
+                    </div>
+                </article>
+            </div>
+        </section>
     </main>
+
+    <footer class="index-footer">
+        Я футер
+    </footer>
     
+    <script src="js/slider.js"></script>
 </body>
 </html>

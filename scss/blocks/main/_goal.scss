@@ -1,7 +1,6 @@
 .goal {
     &__container {
-        padding-top: 130px;
-        padding-bottom: 100px;
+        @include section-gap;
     }
     &__title {
         @include title-general;
